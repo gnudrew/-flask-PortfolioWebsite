@@ -1,6 +1,6 @@
 # -flask-PortfolioWebsite
 
-An web app using Flask to serve a code portolio website via heroku.com.
+An web app using Flask to serve a code portolio website hosted via heroku.com.
 
 ### Packages used:
 > *flask*
