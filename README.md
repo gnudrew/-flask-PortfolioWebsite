@@ -1,6 +1,6 @@
 # -flask-PersonalWebsite
 
-An web app using Flask to serve a code portolio website hosted via heroku.com.
+A web app using Flask to serve a code portolio website hosted via heroku.com.
 
 ### Packages used:
 > *flask*
