@@ -1,822 +1,722 @@
 <!DOCTYPE html>
-<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<html class="no-js" lang="en">
 <head>
 
-   <!--- Basic Page Needs
-   ================================================== -->
-   <meta charset="utf-8">
-	<title>Ceevee - Free Responsive HTML5/CSS3 Template</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
-
-   <!-- Mobile Specific Metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<!-- CSS
+    <!--- basic page needs
     ================================================== -->
-   <link rel="stylesheet" href={{ url_for('static', filename="css/default.css") }}>
-	<link rel="stylesheet" href={{ url_for('static', filename="css/layout.css") }}>
-   <link rel="stylesheet" href={{ url_for('static', filename="css/media-queries.css") }}>
-   <link rel="stylesheet" href={{ url_for('static', filename="css/magnific-popup.css") }}>
+    <meta charset="utf-8">
+    <title>Ethos</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-   <!-- Script
-   ================================================== -->
-	<script src={{ url_for('static', filename="js/modernizr.js") }}></script>
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-   <!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href={{ url_for('static', filename="favicon.png") }}>
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="../static/css/vendor.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="../static/js/modernizr.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
 
 </head>
 
-<body>
-
-   <!-- Header
-   ================================================== -->
-   <header id="home">
-
-      <nav id="nav-wrap">
-
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-
-         <ul id="nav" class="nav">
-            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">About</a></li>
-	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
-            <li><a class="smoothscroll" href="#portfolio">Works</a></li>
-            <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li>
-            <li><a class="smoothscroll" href="#contact">Contact</a></li>
-         </ul> <!-- end #nav -->
-
-      </nav> <!-- end #nav-wrap -->
-
-      <div class="row banner">
-         <div class="banner-text">
-            <h1 class="responsive-headline">I'm Andrew Reid.</h1>
-            <h3>I'm a Minnesota based <span>software engineer</span>, <span>developer</span> and <span>data scientist</span> creating awesome and
-            applications. Let's <a class="smoothscroll" href="#about">start scrolling</a>
-            and learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
-            <hr />
-            <ul class="social">
-               <li><a href="https://www.linkedin.com/in/andrew-reid-28b79352/"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="https://github.com/gnudrew"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="#"><i class="fa fa-skype"></i></a></li>
-            </ul>
-         </div>
-      </div>
-
-      <p class="scrolldown">
-         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
-      </p>
-
-   </header> <!-- Header End -->
+<body id="top">
 
 
-   <!-- About Section
-   ================================================== -->
-   <section id="about">
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
 
-      <div class="row">
 
-         <div class="three columns">
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
 
-            <img class="profile-pic"  src={{ url_for('static', filename="images/profilepic.jpg") }} alt="" />
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="../static/images/logo.svg" alt="Homepage">
+            </a>
+        </div>
 
-         </div>
+        <div class="header-content">
+    
+            <nav class="row header-nav-wrap">
+                <ul class="header-nav">
+                    <li><a class="smoothscroll" href="#hero" title="Intro">Home</a></li>
+                    <li><a class="smoothscroll" href="#about" title="About">About</a></li>
+                    <li><a class="smoothscroll" href="#services" title="Services">Services</a></li>
+                    <li><a class="smoothscroll" href="#portfolio" title="Works">Works</a></li>
+                    <li><a href="mailto:#0" title="Contact us">Say Hello</a></li>
+                </ul>
+            </nav> <!-- end header-nav-wrap -->
 
-         <div class="nine columns main-col">
+            <a href="#0" class="btn btn--stroke btn--small">Download CV</a>
 
-            <h2>About Me</h2>
+        </div> <!-- end header-content -->
 
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-            voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-            voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-            sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.
-            </p>
+        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+
+    </header> 
+
+
+    <!-- hero
+    ================================================== -->
+    <section id="hero" class="s-hero target-section" data-parallax="scroll" data-image-src="../static/images/hero-bg-3000.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+        <div class="row hero-content">
+
+            <div class="column large-full">
+
+                <h1>
+                Hello, I'm John Doe, <br>
+                a frontend developer <br>
+                & designer currently <br>
+                based somewhere.
+                </h1>
+
+                <ul class="hero-social">
+                    <li>
+                        <a href="#0" title="">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="#0" title="">Behance</a>
+                    </li>
+                    <li>
+                        <a href="#0" title="">Dribbble</a>
+                    </li>
+                </ul> <!-- end hero-social -->
+
+            </div> 
+
+        </div> <!-- end hero-content -->
+
+        <div class="hero-scroll">
+            <a href="#about" class="scroll-link smoothscroll">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 24l-8-9h6v-15h4v15h6z"/></svg>
+            </a>
+        </div> <!-- end hero-scroll -->
+
+    </section> <!-- end s-hero -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+        <div class="s-about__section s-about__section--profile">
+
+            <div class="right-vert-line"></div>
 
             <div class="row">
-
-               <div class="columns contact-details">
-
-                  <h2>Contact Details</h2>
-                  <p class="address">
-						   <span>Jonathan Doe</span><br>
-						   <span>1600 Amphitheatre Parkway<br>
-						         Mountain View, CA 94043 US
-                     </span><br>
-						   <span>(123)456-7890</span><br>
-                     <span>anyone@website.com</span>
-					   </p>
-
-               </div>
-
-               <div class="columns download">
-                  <p>
-                     <a href="#" class="button"><i class="fa fa-download"></i>Download Resume</a>
-                  </p>
-               </div>
-
-            </div> <!-- end row -->
-
-         </div> <!-- end .main-col -->
-
-      </div>
-
-   </section> <!-- About Section End-->
-
-
-   <!-- Resume Section
-   ================================================== -->
-   <section id="resume">
-
-      <!-- Education
-      ----------------------------------------------- -->
-      <div class="row education">
-
-         <div class="three columns header-col">
-            <h1><span>Education</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>University of Life</h3>
-                  <p class="info">Master in Graphic Design <span>&bull;</span> <em class="date">April 2007</em></p>
-
-                  <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                  ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                  Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium.
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>School of Cool Designers</h3>
-                  <p class="info">B.A. Degree in Graphic Design <span>&bull;</span> <em class="date">March 2003</em></p>
-
-                  <p>
-                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                  Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                  nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
-                  ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Education -->
-
-
-      <!-- Work
-      ----------------------------------------------- -->
-      <div class="row work">
-
-         <div class="three columns header-col">
-            <h1><span>Work</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Awesome Design Studio</h3>
-                  <p class="info">Senior UX Designer <span>&bull;</span> <em class="date">March 2010 - Present</em></p>
-
-                  <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                  ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                  Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium.
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Super Cool Studio</h3>
-                  <p class="info">UX Designer <span>&bull;</span> <em class="date">March 2007 - February 2010</em></p>
-
-                  <p>
-                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                  Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                  nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
-                  ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Work -->
-
-
-      <!-- Skills
-      ----------------------------------------------- -->
-      <div class="row skill">
-
-         <div class="three columns header-col">
-            <h1><span>Skills</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-            voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-            voluptatem sequi nesciunt.
-            </p>
-
-				<div class="bars">
-
-				   <ul class="skills">
-					   <li><span class="bar-expand photoshop"></span><em>Photoshop</em></li>
-                  <li><span class="bar-expand illustrator"></span><em>Illustrator</em></li>
-						<li><span class="bar-expand wordpress"></span><em>Wordpress</em></li>
-						<li><span class="bar-expand css"></span><em>CSS</em></li>
-						<li><span class="bar-expand html5"></span><em>HTML5</em></li>
-                  <li><span class="bar-expand jquery"></span><em>jQuery</em></li>
-					</ul>
-
-				</div><!-- end skill-bars -->
-
-			</div> <!-- main-col end -->
-
-      </div> <!-- End skills -->
-
-   </section> <!-- Resume Section End-->
-
-
-   <!-- Portfolio Section
-   ================================================== -->
-   <section id="portfolio">
-
-      <div class="row">
-
-         <div class="twelve columns collapsed">
-
-            <h1>Check Out Some of My Works.</h1>
-
-            <!-- portfolio-wrapper -->
-            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
-
-          	   <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-01" title="">
-                        <img alt="" src={{ url_for('static', filename="images/portfolio/coffee.jpg") }}>
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Coffee</h5>
-                              <p>Illustrration</p>
-          					   </div>
+                <div class="column large-6 medium-8 tab-full">
+
+                    <div class="section-intro" data-num="01" data-aos="fade-up">
+                        <h3 class="subhead">About Me</h3>
+                        <h1 class="display-1">I'm the kind of person who isn't afraid of challenges.</h1>
+                    </div>
+
+                    <div class="profile-pic" data-aos="fade-up">
+                        <img src="../static/images/profile-pic.jpg" 
+                             srcset="../static/images/profile-pic.jpg 1x, ../static/images/profile-pic@2x.jpg 2x" alt="">
+                    </div>
+
+                    <h3 data-aos="fade-up">Profile</h3>
+
+                    <p data-aos="fade-up">
+                    In consectetuer turpis ut velit. Praesent metus tellus, elementum eu, semper a, adipiscing nec, purus. 
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis 
+                    mi consectetuer lacinia. Fusce neque. Curabitur nisi. Suspendisse nisl elit, rhoncus eget, elementum ac, 
+                    condimentum eget, diam. Phasellus magna. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, 
+                    ipsum. Maecenas egestas arcu quis ligula mattis placerat. Suspendisse pulvinar, augue ac venenatis condimentum, 
+                    sem libero volutpat nibh, nec pellentesque velit pede quis nunc.
+                    </p>
+
+                </div>
+            </div>
+
+        </div> <!-- end s-about__section--profile -->
+
+        <div class="s-about__section">
+
+            <div class="row">
+                <div class="column">
+                    <h3 data-aos="fade-up">Career</h3>
+                </div>
+            </div>
+
+            <div class="row block-large-1-2 block-900-full work-positions">
+
+                <div class="column" data-aos="fade-up">
+                    <div class="position">
+                        <div class="position__header">
+                            <h6>
+                                <span class="position__co">Google</span>
+                                <span class="position__pos">Product Designer</span>
+                            </h6>
+                            <div class="position__timeframe">
+                                June 2017 - Present
+                            </div>
                         </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
 
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-02" title="">
-                        <img alt="" src={{ url_for('static', filename="images/portfolio/console.jpg") }}>
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Console</h5>
-                              <p>Web Development</p>
-          					   </div>
+                        <p>
+                        Pellentesque posuere. Etiam rhoncus. Praesent blandit laoreet nibh. 
+                        Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, 
+                        eu sollicitudin urna dolor sagittis lacus. 
+                        </p>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column" data-aos="fade-up">
+                    <div class="position">
+                        <div class="position__header">
+                            <h6>
+                                <span class="position__co">Facebook</span>
+                                <span class="position__pos">UX Director</span>
+                            </h6>
+                            <div class="position__timeframe">
+                                August 2015 - June 2017
+                            </div>
                         </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
 
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-03" title="">
-                        <img alt="" src={{ url_for('static', filename="images/portfolio/judah.jpg") }}>
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Judah</h5>
-                              <p>Webdesign</p>
-          					   </div>
+                        <p>
+                        Aliquam erat volutpat. Phasellus volutpat, metus eget egestas mollis, 
+                        lacus lacus blandit dui, id egestas quam mauris ut lacus. Pellentesque 
+                        dapibus hendrerit tortor. 
+                        </p>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column" data-aos="fade-up">
+                    <div class="position">
+                        <div class="position__header">
+                            <h6>
+                                <span class="position__co">Dropbox</span>
+                                <span class="position__pos">Mobile App Designer</span>
+                            </h6>
+                            <div class="position__timeframe">
+                                April 2014 - August 2015
+                            </div>
                         </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
 
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-04" title="">
-                        <img alt="" src={{ url_for('static', filename="images/portfolio/into-the-light.jpg") }}>
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Into The Light</h5>
-                              <p>Photography</p>
-          					   </div>
+                        <p>
+                        In hac habitasse platea dictumst. Donec pede justo, fringilla vel, aliquet nec, 
+                        vulputate eget, arcu. Fusce risus nisl, viverra et, tempor et, pretium in, sapien.
+                        Phasellus volutpat, metus eget.
+                        </p>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column" data-aos="fade-up">
+                    <div class="position">
+                        <div class="position__header">
+                            <h6>
+                                <span class="position__co">Microsoft</span>
+                                <span class="position__pos">Product Designer</span>
+                            </h6>
+                            <div class="position__timeframe">
+                                June 2012 - February 2014
+                            </div>
                         </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
 
-                  </div>
-          		</div> <!-- item end -->
+                        <p>
+                        Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
+                        Curabitur blandit mollis lacus. Curabitur vestibulum aliquam leo. 
+                        Vivamus in erat ut urna cursus vestibulum.
+                        </p>
+                    </div>
+                </div> <!-- end column -->
 
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
+            </div> <!-- work positions -->
 
-                     <a href="#modal-05" title="">
-                        <img alt="" src={{ url_for('static', filename="images/portfolio/farmerboy.jpg") }}>
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Farmer Boy</h5>
-                              <p>Branding</p>
-          					   </div>
+        </div> <!-- end s-about__section -->
+
+    </section> <!-- end s-about -->
+
+
+    <!-- services
+    ================================================== -->
+    <section id="services" class="s-services target-section h-dark-bg">
+        
+        <div class="row s-services__content">
+
+            <div class="vert-line"></div>
+
+            <div class="column large-6 s-services__leftcol">
+                <div class="section-intro" data-num="02" data-aos="fade-up">
+                    <h3 class="subhead">Expertise</h3>
+
+                    <h1 class="display-1">
+                    I focus on crafting web experiences
+                    and designs that works.
+                    </h1>
+                </div>
+
+                <p class="lead" data-aos="fade-up">
+                Suspendisse eu ligula. Duis arcu tortor, suscipit eget, 
+                imperdiet nec, imperdiet iaculis, ipsum. Nulla facilisi.
+                Etiam rhoncus. Praesent blandit laoreet nibh.
+                Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+                Cras sagittis. Praesent egestas tristique nibh.
+                </p>
+            </div> <!-- end  s-services--leftcol -->
+
+            <div class="column large-6">
+                <ul class="services-list" data-aos="fade-up">
+                    <li class="services-list__item is-active">
+                        <div class="services-list__item-header">
+                            <h5>Product Design</h5>
                         </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-06" title="">
-                        <img alt="" src={{ url_for('static', filename="images/portfolio/girl.jpg") }}>
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Girl</h5>
-                              <p>Photography</p>
-          					   </div>
+                        <div class="services-list__item-body">
+                            <p>
+                            Fusce egestas elit eget lorem. Donec venenatis vulputate lorem. 
+                            Nam at tortor in tellus interdum sagittis. Vestibulum fringilla 
+                            pede sit amet augue. Praesent blandit laoreet nibh.
+                            Donec quam felis, ultricies nec, pellentesque eu.
+                            </p>
                         </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-07" title="">
-                        <img alt="" src={{ url_for('static', filename="images/portfolio/origami.jpg") }}>
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Origami</h5>
-                              <p>Illustrration</p>
-          					   </div>
+                    </li> <!-- services-list__item -->
+                    <li class="services-list__item">
+                        <div class="services-list__item-header">
+                            <h5>Branding</h5>
                         </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-08" title="">
-                        <img alt="" src={{ url_for('static', filename="images/portfolio/retrocam.jpg") }}>
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Retrocam</h5>
-                              <p>Web Development</p>
-          					   </div>
+                        <div class="services-list__item-body">
+                            <p>
+                            Sed cursus turpis vitae tortor. Sed aliquam ultrices mauris. 
+                            Fusce fermentum. Curabitur turpis. Nunc egestas, augue at pellentesque 
+                            laoreet, felis eros vehicula leo, at malesuada velit leo quis pede. 
+                            In consectetuer turpis ut velit. Curabitur at lacus.
+                            </p>
                         </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div>  <!-- item end -->
-
-            </div> <!-- portfolio-wrapper end -->
-
-         </div> <!-- twelve columns end -->
-
-
-         <!-- Modal Popup
-	      --------------------------------------------------------------- -->
-
-         <div id="modal-01" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src={{ url_for('static', filename="images/portfolio/modals/m-coffee.jpg") }} alt="" />
-
-		      <div class="description-box">
-			      <h4>Coffee Cup</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
+                    </li> <!-- services-list__item -->
+                    <li class="services-list__item">
+                        <div class="services-list__item-header">
+                            <h5>Frontend Development</h5>
+                        </div>
+                        <div class="services-list__item-body">
+                            <p>
+                            Suspendisse non nisl sit amet velit hendrerit rutrum. Etiam vitae tortor. 
+                            Ut tincidunt tincidunt erat. Praesent nonummy mi in odio. Praesent ut 
+                            ligula non mi varius sagittis. Curabitur turpis. Nunc egestas, augue at pellentesque 
+                            laoreet, felis eros vehicula leo, at malesuada velit leo quis pede.
+                            </p>
+                        </div>
+                    </li> <!-- services-list__item -->
+                    <li class="services-list__item">
+                        <div class="services-list__item-header">
+                            <h5>UX Research</h5>
+                        </div>
+                        <div class="services-list__item-body">
+                            <p>
+                            Nullam quis ante. Sed libero. Curabitur at lacus ac velit ornare lobortis. 
+                            Morbi nec metus. Aenean vulputate eleifend tellus. Nullam vel sem. Nam ipsum risus, 
+                            rutrum vitae, vestibulum eu, molestie vel, lacus. Phasellus ullamcorper ipsum rutrum nunc. 
+                            Cras dapibus. Praesent egestas neque eu enim.
+                            </p>
+                        </div>
+                    </li> <!-- services-list__item -->
+                    <li class="services-list__item">
+                        <div class="services-list__item-header">
+                            <h5>Visual Design</h5>
+                        </div>
+                        <div class="services-list__item-body">
+                            <p>
+                            Ut id nisl quis enim dignissim sagittis. Pellentesque egestas, neque sit amet convallis 
+                            pulvinar, justo nulla eleifend augue, ac auctor orci leo non est. Phasellus volutpat, 
+                            metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. 
+                            Cras dapibus. Praesent adipiscing.
+                            </p>
+                        </div>
+                    </li> <!-- services-list__item -->
+                    <li class="services-list__item">
+                        <div class="services-list__item-header">
+                            <h5>E-Commerce</h5>
+                        </div>
+                        <div class="services-list__item-body">
+                            <p>
+                            Praesent ac sem eget est egestas volutpat. Nam pretium turpis et arcu. Quisque ut nisi. 
+                            Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque 
+                            ante vel mi. Phasellus dolor. Aenean vulputate eleifend tellus. Nullam vel sem. Nam ipsum risus, 
+                            rutrum vitae, vestibulum eu, molestie vel.
+                            </p>
+                        </div>
+                    </li> <!-- services-list__item -->
+                </ul> <!-- end services-list -->
             </div>
 
-	      </div><!-- modal-01 End -->
+        </div> <!-- s-services__content -->
 
-         <div id="modal-02" class="popup-modal mfp-hide">
+    </section> <!-- end s-services -->
 
-		      <img class="scale-with-grid" src={{ url_for('static', filename="images/portfolio/modals/m-console.jpg") }} alt="" />
 
-		      <div class="description-box">
-			      <h4>Console</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Web Development</span>
-		      </div>
+    <!-- portfolio
+    ================================================== -->
+    <section id="portfolio" class="s-portfolio target-section">
 
-            <div class="link-box">
-               <a href="http://www.behance.net">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
+        <div class="row s-portfolio__header">
+            <div class="column large-6 medium-8 tab-full">
+                <div class="section-intro" data-num="03" data-aos="fade-up">
+                    <h3 class="subhead">Portfolio</h3>
+                    <h1 class="display-1">
+                        A selection of recent projects I have worked on.
+                    </h1>
+                </div>
+            </div>
+        </div> <!-- s-porfolio__header -->
+
+        <div class="row s-porfolio__list block-large-1-2 block-tab-full collapse">
+
+            <div class="column" data-aos="fade-up">
+                <div class="folio-item">
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-windows-in-the-city.jpg" title="Windows in The City" data-size="1050x700">
+                            <img src="../static/images/portfolio/windows-in-the-city.jpg" 
+                                 srcset="../static/images/portfolio/windows-in-the-city.jpg 1x, ../static/images/portfolio/windows-in-the-city@2x.jpg 2x" alt="">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">Branding</div>
+                        <h4 class="folio-item__title">Windows in The City</h4>
+                    </div>
+                    <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                    <div class="folio-item__caption">
+                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                    </div>
+                </div>
+            </div> <!-- end column -->
+            <div class="column" data-aos="fade-up">
+                <div class="folio-item">
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-building-blocks.jpg" title="Building Blocks" data-size="1050x700">
+                            <img src="../static/images/portfolio/building-blocks.jpg" 
+                                 srcset="../static/images/portfolio/building-blocks.jpg 1x, ../static/images/portfolio/building-blocks@2x.jpg 2x" alt="">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">Frontend Design</div>
+                        <h4 class="folio-item__title">Building Blocks</h4>
+                    </div>
+                    <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                    <div class="folio-item__caption">
+                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                    </div>
+                </div>
+            </div> <!-- end column -->
+            <div class="column" data-aos="fade-up">
+                <div class="folio-item">
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-shout-jump.jpg" Title="Shout and Jump" data-size="1050x700">
+                            <img src="../static/images/portfolio/shout-and-jump.jpg" 
+                                 srcset="../static/images/portfolio/shout-and-jump.jpg 1x, ../static/images/portfolio/shout-and-jump@2x.jpg 2x" alt="">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">Branding</div>
+                        <h4 class="folio-item__title">Shout & Jump</h4>
+                    </div>
+                    <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                    <div class="folio-item__caption">
+                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                    </div>
+                </div>
+            </div> <!-- end column -->
+            <div class="column" data-aos="fade-up">
+                <div class="folio-item">
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-sand-dunes.jpg" title="Sand Dunes" data-size="1050x700">
+                            <img src="../static/images/portfolio/sand-dunes.jpg" 
+                                 srcset="../static/images/portfolio/sand-dunes.jpg 1x, ../static/images/portfolio/sand-dunes@2x.jpg 2x" alt="">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">Frontend Design</div>
+                        <h4 class="folio-item__title">Sand Dunes</h4>
+                    </div>
+                    <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                    <div class="folio-item__caption">
+                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                    </div>
+                </div>
+            </div> <!-- end column -->
+            <div class="column" data-aos="fade-up">
+                <div class="folio-item">
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-woodcraft.jpg" title="Sand Dunes" data-size="1050x700">
+                            <img src="../static/images/portfolio/woodcraft.jpg" 
+                                 srcset="../static/images/portfolio/woodcraft.jpg 1x, ../static/images/portfolio/woodcraft@2x.jpg 2x" alt="">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">Product Design</div>
+                        <h4 class="folio-item__title">Wooocraft</h4>
+                    </div>
+                    <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                    <div class="folio-item__caption">
+                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                    </div>
+                </div>
+            </div> <!-- end column -->
+            <div class="column" data-aos="fade-up">
+                <div class="folio-item">
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-lamp.jpg" title="The Lamp" data-size="1050x700">
+                            <img src="../static/images/portfolio/lamp.jpg" 
+                                 srcset="../static/images/portfolio/lamp.jpg 1x, ../static/images/portfolio/lamp@2x.jpg 2x" alt="">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">Product Design</div>
+                        <h4 class="folio-item__title">The Lamp</h4>
+                    </div>
+                    <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                    <div class="folio-item__caption">
+                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                    </div>
+                </div>
+            </div> <!-- end column -->
+
+        </div> <!-- folio-list -->
+
+    </section> <!-- end portfolio -->
+
+
+    <!-- testimonials
+    ================================================== -->
+    <section id="testimonials" class="s-testimonials">
+
+        <div class="row collapse">
+
+            <div class="column large-full">
+
+                <div class="testimonial-slider" data-aos="fade-up">
+
+                    <div class="testimonial-slider__slide">
+                        <p>
+                        Molestiae incidunt consequatur quis ipsa autem nam sit enim magni. Voluptas tempore rem. 
+                        Explicabo a quaerat sint autem dolore ducimus ut consequatur neque.  Nisi dolores quaerat fuga rem nihil nostrum.
+                        Laudantium quia consequatur molestias delectus culpa.
+                        </p>
+                        <div class="testimonial-slider__author">
+                            <img src="../static/images/avatars/user-02.jpg" alt="Author image" class="testimonial-slider__avatar">
+                            <cite class="testimonial-slider__cite">
+                                <strong>Tim Cook</strong>
+                                <span>CEO, Apple</span>
+                            </cite>
+                        </div>
+                    </div> <!-- end testimonials__slide -->
+    
+                    <div class="testimonial-slider__slide">
+                        <p>
+                        Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
+                        Nisi eaque consequatur. Voluptatem dignissimos ut ducimus accusantium perspiciatis.
+                        Quasi voluptas eius distinctio. Atque eos maxime.
+                        </p>
+                        <div class="testimonial-slider__author">
+                            <img src="../static/images/avatars/user-01.jpg" alt="Author image" class="testimonial-slider__avatar">
+                            <cite class="testimonial-slider__cite">
+                                <strong>Sundar Pichai</strong>
+                                <span>CEO, Google</span>
+                            </cite>
+                        </div>
+                    </div> <!-- end testimonials__slide -->
+    
+                    <div class="testimonial-slider__slide">
+                        <p>
+                        Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
+                        Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.
+                        Voluptatem dignissimos ut.
+                        </p>
+                        <div class="testimonial-slider__author">
+                            <img src="../static/images/avatars/user-04.jpg" alt="Author image" class="testimonial-slider__avatar">
+                            <cite class="testimonial-slider__cite">
+                                <strong>Satya Nadella</strong>
+                                <span>CEO, Microsoft</span>
+                            </cite>
+                        </div>
+                    </div> <!-- end testimonials__slide -->
+    
+                    <div class="testimonial-slider__slide">
+                        <p>
+                        Nunc interdum lacus sit amet orci. Vestibulum dapibus nunc ac augue. Fusce vel dui. In ac felis 
+                        quis tortor malesuada pretium. Curabitur vestibulum aliquam leo. Qui sed at corrupti expedita voluptas odit. 
+                        Nihil ea quia nesciunt. Ducimus aut sed ipsam.
+                        </p>
+                        <div class="testimonial-slider__author">
+                            <img src="../static/images/avatars/user-05.jpg" alt="Author image" class="testimonial-slider__avatar">
+                            <cite class="testimonial-slider__cite">
+                                <strong>Jeff Bezos</strong>
+                                <span>CEO, Amazon</span>
+                            </cite>
+                        </div>
+                    </div> <!-- end testimonials__slide -->
+
+                </div> <!-- end testimonial slider -->
+                
+            </div> <!-- end column -->
+
+        </div> <!-- end row -->
+
+
+        <!-- CTA
+        ================================================== -->
+        <div class="s-cta">
+
+            <div class="row">
+                <div class="column large-full">
+                    <h2 class="section-desc" data-aos="fade-up">
+                        Need a great reliable web hosting?
+                    </h2>
+                </div>
+            </div>
+    
+            <div class="row cta-content" data-aos="fade-up">
+                <div class="column large-full">
+                    <p>
+                    We highly recommend <a href="https://www.dreamhost.com/r.cgi?287326">DreamHost</a>.
+                    Powerful web and Wordpress hosting. Guaranteed.
+                    Starting at $2.95 per month.
+                    </p>
+    
+                    <a href="https://www.dreamhost.com/r.cgi?287326" class="btn btn--primary h-full-width">Get Started</a>
+                </div>
+            </div> <!-- end cta-content -->
+    
+        </div> <!-- end s-cta -->
+
+
+    </section> <!-- end s-testimonials -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer h-dark-bg">
+        
+        <div class="right-vert-line"></div>
+
+        <div class="row s-footer__main">
+            <div class="column large-6">
+                <div class="section-intro" data-aos="fade-up">
+                    <h3 class="subhead">Get In Touch</h3>
+
+                    <h1 class="display-1">
+                    Have an idea or a concept that really excite you?
+                    Let's turn that idea into reality. Shoot me a message.
+                    </h1>
+                </div>
+
+                <div class="footer-email-us">
+                    <a href="mailto:#0" class="btn btn--primary h-full-width">Let's Talk</a>
+                </div>
             </div>
 
-	      </div><!-- modal-02 End -->
+            <div class="column large-5">
+                <div class="footer-contacts">
+                    <div class="footer-contact-block" data-aos="fade-up">
+                        <h5 class="footer-contact-block__header">
+                            Email
+                        </h5>
+                        <p class="footer-contact-block__content">
+                            <a href="mailto:#0">sayhello@ethos.com</a>
+                        </p>
+                    </div> <!-- end footer-contact-block -->
+                    <div class="footer-contact-block" data-aos="fade-up">
+                        <h5 class="footer-contact-block__header">
+                            Phone
+                        </h5>
+                        <p class="footer-contact-block__content">
+                            <a href="tel:+1975432345">+197 543 2345</a>
+                        </p>
+                    </div> <!-- end footer-contact-block -->
+                    <br>
+                    <div class="footer-contact-block" data-aos="fade-up">
+                        <h5 class="footer-contact-block__header">
+                            Social
+                        </h5>
+                        <ul class="footer-contact-block__list">
+                            <li><a href="#0">Twitter</a></li>
+                            <li><a href="#0">Instagram</a></li>
+                            <li><a href="#0">Behance</a></li>
+                            <li><a href="#0">Dribbble</a></li>
+                        </ul>
+                    </div> <!-- end footer-contact-block -->
+                </div>
+            </div>
+        </div> <!-- end s-footer__main -->
 
-         <div id="modal-03" class="popup-modal mfp-hide">
+        <div class="row s-footer__bottom">
+            <div class="column large-full ss-copyright">
+                <span>© Copyright Ethos 2019</span> 
+                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+            </div> <!-- end ss-copyright -->
 
-		      <img class="scale-with-grid" src={{ url_for('static', filename="images/portfolio/modals/m-judah.jpg") }} alt="" />
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0l8 9h-6v15h-4v-15h-6z"/></svg>
+                </a>
+            </div> <!-- end ss-go-top -->
+        </div> <!-- end s-footer__bottom -->
 
-		      <div class="description-box">
-			      <h4>Judah</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding</span>
-		      </div>
+    </footer> <!-- end s-footer -->
 
-            <div class="link-box">
-               <a href="http://www.behance.net">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
             </div>
 
-	      </div><!-- modal-03 End -->
-
-         <div id="modal-04" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src={{ url_for('static', filename="images/portfolio/modals/m-intothelight.jpg") }} alt="" />
-
-		      <div class="description-box">
-			      <h4>Into the Light</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Photography</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
             </div>
 
-	      </div><!-- modal-04 End -->
+        </div>
 
-         <div id="modal-05" class="popup-modal mfp-hide">
+    </div> <!-- end photoSwipe background -->
 
-		      <img class="scale-with-grid" src={{ url_for('static', filename="images/portfolio/modals/m-farmerboy.jpg") }} alt="" />
 
-		      <div class="description-box">
-			      <h4>Farmer Boy</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-05 End -->
-
-         <div id="modal-06" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src={{ url_for('static', filename="images/portfolio/modals/m-girl.jpg") }} alt="" />
-
-		      <div class="description-box">
-			      <h4>Girl</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Photography</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-06 End -->
-
-         <div id="modal-07" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src={{ url_for('static', filename="images/portfolio/modals/m-origami.jpg") }} alt="" />
-
-		      <div class="description-box">
-			      <h4>Origami</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Illustration</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-07 End -->
-
-         <div id="modal-08" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src={{ url_for('static', filename="images/portfolio/modals/m-retrocam.jpg") }} alt="" />
-
-		      <div class="description-box">
-			      <h4>Retrocam</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Webdesign, Photography</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-01 End -->
-
-
-      </div> <!-- row End -->
-
-   </section> <!-- Portfolio Section End-->
-
-
-   <!-- Call-To-Action Section
-   ================================================== -->
-   <section id="call-to-action">
-
-      <div class="row">
-
-         <div class="two columns header-col">
-
-            <h1><span>Get Hosting.</span></h1>
-
-         </div>
-
-         <div class="seven columns">
-
-            <h2><a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Host This Template on Dreamhost.</a></h2>
-            <p>Looking for an awesome and reliable webhosting? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>DreamHost</span></a>.
-					Get <span>$50 off</span> when you sign up with the promocode <span>STYLESHOUT</span>. 
-					<!-- Simply type	the promocode in the box labeled “Promo Code” when placing your order. --></p>
-
-         </div>
-
-         <div class="three columns action">
-
-            <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT" class="button">Sign Up Now</a>
-
-         </div>
-
-      </div>
-
-   </section> <!-- Call-To-Action Section End-->
-
-
-   <!-- Testimonials Section
-   ================================================== -->
-   <section id="testimonials">
-
-      <div class="text-container">
-
-         <div class="row">
-
-            <div class="two columns header-col">
-
-               <h1><span>Client Testimonials</span></h1>
-
-            </div>
-
-            <div class="ten columns flex-container">
-
-               <div class="flexslider">
-
-                  <ul class="slides">
-
-                     <li>
-                        <blockquote>
-                           <p>Your work is going to fill a large part of your life, and the only way to be truly satisfied is
-                           to do what you believe is great work. And the only way to do great work is to love what you do.
-                           If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it.
-                           </p>
-                           <cite>Steve Jobs</cite>
-                        </blockquote>
-                     </li> <!-- slide ends -->
-
-                     <li>
-                        <blockquote>
-                           <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                           Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                           nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
-                           </p>
-                           <cite>Mr. Adobe</cite>
-                        </blockquote>
-                     </li> <!-- slide ends -->
-
-                  </ul>
-
-               </div> <!-- div.flexslider ends -->
-
-            </div> <!-- div.flex-container ends -->
-
-         </div> <!-- row ends -->
-
-       </div>  <!-- text-container ends -->
-
-   </section> <!-- Testimonials Section End-->
-
-
-   <!-- Contact Section
-   ================================================== -->
-   <section id="contact">
-
-         <div class="row section-head">
-
-            <div class="two columns header-col">
-
-               <h1><span>Get In Touch.</span></h1>
-
-            </div>
-
-            <div class="ten columns">
-
-                  <p class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                  eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                  voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-                  </p>
-
-            </div>
-
-         </div>
-
-         <div class="row">
-
-            <div class="eight columns">
-
-               <!-- form -->
-               <form action="" method="post" id="contactForm" name="contactForm">
-					<fieldset>
-
-                  <div>
-						   <label for="contactName">Name <span class="required">*</span></label>
-						   <input type="text" value="" size="35" id="contactName" name="contactName">
-                  </div>
-
-                  <div>
-						   <label for="contactEmail">Email <span class="required">*</span></label>
-						   <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
-                  </div>
-
-                  <div>
-						   <label for="contactSubject">Subject</label>
-						   <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
-                  </div>
-
-                  <div>
-                     <label for="contactMessage">Message <span class="required">*</span></label>
-                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
-                  </div>
-
-                  <div>
-                     <button class="submit">Submit</button>
-                     <span id="image-loader">
-                        <img alt="" src={{ url_for('static', filename="images/loader.gif") }}>
-                     </span>
-                  </div>
-
-					</fieldset>
-				   </form> <!-- Form End -->
-
-               <!-- contact-warning -->
-               <div id="message-warning"> Error boy</div>
-               <!-- contact-success -->
-				   <div id="message-success">
-                  <i class="fa fa-check"></i>Your message was sent, thank you!<br>
-				   </div>
-
-            </div>
-
-
-            <aside class="four columns footer-widgets">
-
-               <div class="widget widget_contact">
-
-					   <h4>Address and Phone</h4>
-					   <p class="address">
-						   Jonathan Doe<br>
-						   1600 Amphitheatre Parkway <br>
-						   Mountain View, CA 94043 US<br>
-						   <span>(123) 456-7890</span>
-					   </p>
-
-				   </div>
-
-               <div class="widget widget_tweets">
-
-                  <h4 class="widget-title">Latest Tweets</h4>
-
-                  <ul id="twitter">
-                     <li>
-                        <span>
-                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum
-                        <a href="#">http://t.co/CGIrdxIlI3</a>
-                        </span>
-                        <b><a href="#">2 Days Ago</a></b>
-                     </li>
-                     <li>
-                        <span>
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                        eaque ipsa quae ab illo inventore veritatis et quasi
-                        <a href="#">http://t.co/CGIrdxIlI3</a>
-                        </span>
-                        <b><a href="#">3 Days Ago</a></b>
-                     </li>
-                  </ul>
-
-		         </div>
-
-            </aside>
-
-      </div>
-
-   </section> <!-- Contact Section End-->
-
-
-   <!-- footer
-   ================================================== -->
-   <footer>
-
-      <div class="row">
-
-         <div class="twelve columns">
-
-            <ul class="social-links">
-               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-               <li><a href="#"><i class="fa fa-skype"></i></a></li>
-            </ul>
-
-            <ul class="copyright">
-               <li>&copy; Copyright 2014 CeeVee</li>
-               <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>   
-            </ul>
-
-         </div>
-
-         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
-
-      </div>
-
-   </footer> <!-- Footer End-->
-
-   <!-- Java Script
-   ================================================== -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src={{ url_for('static', filename="js/jquery-1.10.2.min.js") }}><\/script>')</script>
-   <script type="text/javascript" src={{ url_for('static', filename="js/jquery-migrate-1.2.1.min.js") }}></script>
-
-   <script src={{ url_for('static', filename="js/jquery.flexslider.js") }}></script>
-   <script src={{ url_for('static', filename="js/waypoints.js") }}></script>
-   <script src={{ url_for('static', filename="js/jquery.fittext.js") }}></script>
-   <script src={{ url_for('static', filename="js/magnific-popup.js") }}></script>
-   <script src={{ url_for('static', filename="js/init.js") }}></script>
+    <!-- Java Script
+    ================================================== -->
+    <script src="../static/js/jquery-3.2.1.min.js"></script>
+    <script src="../static/js/plugins.js"></script>
+    <script src="../static/js/main.js"></script>
 
 </body>
-
-</html>
