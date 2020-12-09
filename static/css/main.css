@@ -2448,7 +2448,7 @@ html.no-csstransitions .hero-content {
 }
 
 .s-about .right-vert-line {
-  background-color: #302c59;
+  background-color: #302c59; 
 }
 
 .s-about__section--profile {
@@ -2461,7 +2461,7 @@ html.no-csstransitions .hero-content {
 .s-about__section--profile::before {
   content: "";
   display: block;
-  background-color: #c24450;
+  background-color: #ff36006e !important;
   position: absolute;
   top: 0;
   bottom: 0;
