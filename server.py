@@ -17,11 +17,8 @@ def app1():
 @app.route('/app1/run')
 def app1_run():
     # launch the Kivy app.
-    print(os.getcwd())
-    os.chdir('apps/app1')
-    print(os.getcwd())
     import apps.app1.main
-    return 'Click!'
+    return 'Launching Kivy App!'
 
 # Routing for App 2
 

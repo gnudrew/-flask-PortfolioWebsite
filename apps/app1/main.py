@@ -1,14 +1,14 @@
 from kivy.app import App 
 from kivy.lang import Builder
 from kivy.uix.screenmanager import ScreenManager, Screen
-from hoverable import HoverBehavior
+from apps.app1.hoverable import HoverBehavior
 from kivy.uix.image import Image
 from kivy.uix.behaviors import ButtonBehavior
 import json, glob, random
 from datetime import datetime
 from pathlib import Path
 
-Builder.load_file('design.kv')
+Builder.load_file('apps/app1/design.kv')
 
 class LoginScreen(Screen):
     def sign_up(self):
@@ -70,5 +70,5 @@ class MainApp(App):
         return RootWidget()
 
 # def app1_go():
-    if __name__ == "__main__":
-        MainApp().run()
+if __name__ == "__main__":
+    MainApp().run()
