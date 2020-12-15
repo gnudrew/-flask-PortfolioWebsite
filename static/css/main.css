@@ -1724,7 +1724,7 @@ input::-moz-focus-inner {
 }
 
 .header-nav a {
-  color: rgba(255, 255, 255, 0.795);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .header-nav a:hover,
