@@ -1,7 +1,7 @@
 from kivy.app import App 
 from kivy.lang import Builder
 from kivy.uix.screenmanager import ScreenManager, Screen
-from hoverable import HoverBehavior
+from apps.app1.hoverable import HoverBehavior
 from kivy.uix.image import Image
 from kivy.uix.behaviors import ButtonBehavior
 import json, glob, random
