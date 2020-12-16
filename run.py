@@ -1,5 +1,4 @@
 from flask import Flask, render_template
-import os
 
 app=Flask(__name__)
 
@@ -8,19 +7,9 @@ def home():
     # return "Index Page"
     return render_template("index.html")
 
-# Routing for App 1
-
-@app.route('/app1')
+@app.route('/MoodboosterMobileApp')
 def app1():
     return render_template("app1.html")
-
-@app.route('/app1/run')
-def app1_run():
-    # launch the Kivy app.
-    import apps.app1.main
-    return 'Launching Kivy App!'
-
-# Routing for App 2
 
 @app.route('/DiningPhilosophers')
 def app2():
