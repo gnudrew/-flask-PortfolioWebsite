@@ -6,4 +6,4 @@ A web app using Flask to serve a code portolio website hosted via heroku.com.
 > *flask*
 
 ### To run the app: 
-* Open browser of choice and go to: http://www.andrewreid.dev/
+* Open browser of choice and go to: https://www.andrewreid.dev/
