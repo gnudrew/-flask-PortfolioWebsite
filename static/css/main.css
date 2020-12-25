@@ -2628,13 +2628,13 @@ html.no-csstransitions .hero-content {
 
 .s-services .vert-line {
   width: 2px;
-  height: 20rem;
+  height: 10rem;
   background-color: #f9861a;
   -webkit-transform: translate3d(50%, 0, 0);
   transform: translate3d(50%, 0, 0);
   position: absolute;
-  bottom: -20rem;
-  left: 20px;
+  bottom: 0;
+  right: 11.2rem;
 }
 
 /* ------------------------------------------------------------------- 
@@ -2735,13 +2735,13 @@ html.no-csstransitions .hero-content {
     padding-left: 10px;
   }
 
+  .s-services .vert-line {
+    right: 9rem;
+  }
+
 }
 
 @media screen and (max-width:1040px) {
-  .s-services .vert-line {
-    height: 12rem;
-    left: 16px;
-  }
 
   .s-services__content .column {
     -ms-flex: 0 0 100%;
@@ -2774,6 +2774,11 @@ html.no-csstransitions .hero-content {
     padding-top: 20rem;
   }
 
+  .s-services .vert-line {
+    height: 8rem;
+    right: 6.2rem;
+  }
+
   .s-services__content .s-services__leftcol {
     -ms-flex: 0 0 100%;
     -webkit-box-flex: 0;
@@ -2785,7 +2790,8 @@ html.no-csstransitions .hero-content {
 
 @media screen and (max-width:600px) {
   .s-services .vert-line {
-    left: 34px;
+    height: 6rem;
+    right: 5rem;
   }
 
   .services-list__item-header h5 {
@@ -2803,7 +2809,7 @@ html.no-csstransitions .hero-content {
 
 @media screen and (max-width:400px) {
   .s-services .vert-line {
-    left: 24px;
+    right: 5rem;
   }
 
   .services-list__item-header h5 {
@@ -2955,7 +2961,29 @@ html.no-csstransitions .hero-content {
   left: 3rem;
 }
 
-.folio-item__project-link::before {
+.folio-item__project-link2 {
+  z-index: 3;
+  display: block;
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #000000;
+  background-color: #ffffff;
+  padding: .6rem 1.2rem;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  -webkit-transition: all, 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all, 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  position: absolute;
+  bottom: 8rem;
+  left: 3rem;
+}
+
+
+.folio-item__project-link::before, .folio-item__project-link2::before {
   display: block;
   content: "";
   height: 1px;
@@ -2968,7 +2996,10 @@ html.no-csstransitions .hero-content {
 
 .folio-item__project-link:hover,
 .folio-item__project-link:focus,
-.folio-item__project-link:active {
+.folio-item__project-link:active,
+.folio-item__project-link2:hover,
+.folio-item__project-link2:focus,
+.folio-item__project-link2:active {
   background-color: #f9861a;
   color: #ffffff;
 }
@@ -2993,6 +3024,14 @@ html.no-csstransitions .hero-content {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
+
+.folio-item:hover .folio-item__project-link2 {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
 
 .folio-item:hover .folio-item__info {
   opacity: 1;
